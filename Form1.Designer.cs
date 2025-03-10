@@ -119,7 +119,6 @@
             this.txtCM.Name = "txtCM";
             this.txtCM.Size = new System.Drawing.Size(163, 36);
             this.txtCM.TabIndex = 6;
-            this.txtCM.Text = "10";
             this.txtCM.TextChanged += new System.EventHandler(this.txtCM_TextChanged);
             // 
             // txtM
