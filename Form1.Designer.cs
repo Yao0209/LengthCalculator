@@ -121,7 +121,6 @@
             this.txtCM.TabIndex = 6;
             this.txtCM.Text = "10";
             this.txtCM.TextChanged += new System.EventHandler(this.txtCM_TextChanged);
-            this.txtCM.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCM_KeyUp);
             // 
             // txtM
             // 
