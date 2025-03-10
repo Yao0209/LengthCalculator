@@ -120,6 +120,7 @@
             this.txtCM.Size = new System.Drawing.Size(163, 36);
             this.txtCM.TabIndex = 6;
             this.txtCM.TextChanged += new System.EventHandler(this.txtCM_TextChanged);
+            this.txtCM.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCM_KeyUp);
             // 
             // txtM
             // 
@@ -130,6 +131,7 @@
             this.txtM.Size = new System.Drawing.Size(163, 36);
             this.txtM.TabIndex = 7;
             this.txtM.TextChanged += new System.EventHandler(this.txtM_TextChanged);
+            this.txtM.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtM_KeyUp);
             // 
             // txtKM
             // 
@@ -140,6 +142,7 @@
             this.txtKM.Size = new System.Drawing.Size(163, 36);
             this.txtKM.TabIndex = 8;
             this.txtKM.TextChanged += new System.EventHandler(this.txtKM_TextChanged);
+            this.txtKM.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtKM_KeyUp);
             // 
             // txtIn
             // 
@@ -150,6 +153,7 @@
             this.txtIn.Size = new System.Drawing.Size(163, 36);
             this.txtIn.TabIndex = 9;
             this.txtIn.TextChanged += new System.EventHandler(this.txtIn_TextChanged);
+            this.txtIn.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtIn_KeyUp);
             // 
             // txtFt
             // 
@@ -160,6 +164,7 @@
             this.txtFt.Size = new System.Drawing.Size(163, 36);
             this.txtFt.TabIndex = 10;
             this.txtFt.TextChanged += new System.EventHandler(this.txtFt_TextChanged);
+            this.txtFt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtFt_KeyUp);
             // 
             // txtYard
             // 
@@ -170,6 +175,7 @@
             this.txtYard.Size = new System.Drawing.Size(163, 36);
             this.txtYard.TabIndex = 11;
             this.txtYard.TextChanged += new System.EventHandler(this.txtYard_TextChanged);
+            this.txtYard.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtYard_KeyUp);
             // 
             // btnAllClear
             // 
@@ -191,6 +197,7 @@
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.Size = new System.Drawing.Size(572, 36);
             this.txtInfo.TabIndex = 17;
+            this.txtInfo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtInfo_KeyUp);
             // 
             // label12
             // 
