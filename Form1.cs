@@ -91,12 +91,21 @@ namespace LengthCalculator
             txtIn.Text = string.Format("{0:0.##########}", douCM / 2.54); // 公分轉換成英吋
             txtFt.Text = string.Format("{0:0.##########}", douCM / 30.48); // 公分轉換成英呎
             txtYard.Text = string.Format("{0:0.##########}", douCM / 91.44); // 公分轉換成碼
-
         }
 
         private void txtM_KeyUp(object sender, KeyEventArgs e)
         {
+            double douM;  // 宣告一個double變數，變數名稱叫douM
 
+            douM = Convert.ToDouble(txtM.Text); // 從txtM輸入文字框取得輸入的文字
+
+            txtM.Text = string.Format("{0:0.##########}", douM); // 公尺轉換成公尺
+
+            txtCM.Text = string.Format("{0:0.##########}", douM * 100); // 公尺轉換成公分
+            txtKM.Text = string.Format("{0:0.##########}", douM / 1000); // 公尺轉換成公里
+            txtIn.Text = string.Format("{0:0.##########}", douM * 39.37); // 公尺轉換成英吋
+            txtFt.Text = string.Format("{0:0.##########}", douM * 3.281); // 公尺轉換成英呎
+            txtYard.Text = string.Format("{0:0.##########}", douM * 1.094); // 公尺轉換成碼
         }
 
         private void txtKM_KeyUp(object sender, KeyEventArgs e)
