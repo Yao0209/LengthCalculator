@@ -127,7 +127,17 @@ namespace LengthCalculator
 
         private void txtIn_KeyUp(object sender, KeyEventArgs e)
         {
+            double douIn;  // 宣告一個double變數，變數名稱叫douIn
 
+            douIn = Convert.ToDouble(txtIn.Text); // 從txtIn輸入文字框取得輸入的文字
+
+            txtIn.Text = string.Format("{0:0.##########}", douIn); // 英吋轉換成英吋
+
+            txtCM.Text = string.Format("{0:0.##########}", douIn * 2.54); // 英吋轉換成公分
+            txtM.Text = string.Format("{0:0.##########}", douIn / 39.37); // 英吋轉換成公尺
+            txtKM.Text = string.Format("{0:0.##########}", douIn / 39370.08); // 英吋轉換成公里
+            txtFt.Text = string.Format("{0:0.##########}", douIn / 12); // 英吋轉換成英呎
+            txtYard.Text = string.Format("{0:0.##########}", douIn / 36); // 英吋轉換成碼
         }
 
         private void txtFt_KeyUp(object sender, KeyEventArgs e)
