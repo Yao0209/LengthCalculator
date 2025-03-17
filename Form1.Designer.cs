@@ -82,7 +82,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微軟正黑體", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.Location = new System.Drawing.Point(120, 262);
+            this.label4.Location = new System.Drawing.Point(94, 262);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 35);
             this.label4.TabIndex = 3;
@@ -93,7 +93,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微軟正黑體", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label5.Location = new System.Drawing.Point(463, 262);
+            this.label5.Location = new System.Drawing.Point(512, 262);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 35);
             this.label5.TabIndex = 4;
@@ -104,7 +104,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微軟正黑體", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label6.Location = new System.Drawing.Point(288, 262);
+            this.label6.Location = new System.Drawing.Point(294, 262);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 35);
             this.label6.TabIndex = 5;
@@ -114,10 +114,11 @@
             // txtCM
             // 
             this.txtCM.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCM.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtCM.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txtCM.Location = new System.Drawing.Point(91, 199);
             this.txtCM.Name = "txtCM";
-            this.txtCM.Size = new System.Drawing.Size(163, 36);
+            this.txtCM.Size = new System.Drawing.Size(163, 39);
             this.txtCM.TabIndex = 6;
             this.txtCM.TextChanged += new System.EventHandler(this.txtCM_TextChanged);
             this.txtCM.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCM_KeyUp);
@@ -125,10 +126,11 @@
             // txtM
             // 
             this.txtM.BackColor = System.Drawing.SystemColors.Window;
+            this.txtM.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtM.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txtM.Location = new System.Drawing.Point(261, 199);
             this.txtM.Name = "txtM";
-            this.txtM.Size = new System.Drawing.Size(163, 36);
+            this.txtM.Size = new System.Drawing.Size(163, 39);
             this.txtM.TabIndex = 7;
             this.txtM.TextChanged += new System.EventHandler(this.txtM_TextChanged);
             this.txtM.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtM_KeyUp);
@@ -136,10 +138,11 @@
             // txtKM
             // 
             this.txtKM.BackColor = System.Drawing.SystemColors.Window;
+            this.txtKM.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtKM.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txtKM.Location = new System.Drawing.Point(430, 199);
             this.txtKM.Name = "txtKM";
-            this.txtKM.Size = new System.Drawing.Size(163, 36);
+            this.txtKM.Size = new System.Drawing.Size(163, 39);
             this.txtKM.TabIndex = 8;
             this.txtKM.TextChanged += new System.EventHandler(this.txtKM_TextChanged);
             this.txtKM.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtKM_KeyUp);
@@ -147,10 +150,11 @@
             // txtIn
             // 
             this.txtIn.BackColor = System.Drawing.SystemColors.Window;
+            this.txtIn.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtIn.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtIn.Location = new System.Drawing.Point(91, 300);
+            this.txtIn.Location = new System.Drawing.Point(41, 300);
             this.txtIn.Name = "txtIn";
-            this.txtIn.Size = new System.Drawing.Size(163, 36);
+            this.txtIn.Size = new System.Drawing.Size(213, 39);
             this.txtIn.TabIndex = 9;
             this.txtIn.TextChanged += new System.EventHandler(this.txtIn_TextChanged);
             this.txtIn.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtIn_KeyUp);
@@ -158,10 +162,11 @@
             // txtFt
             // 
             this.txtFt.BackColor = System.Drawing.SystemColors.Window;
+            this.txtFt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtFt.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtFt.Location = new System.Drawing.Point(261, 300);
+            this.txtFt.Location = new System.Drawing.Point(260, 300);
             this.txtFt.Name = "txtFt";
-            this.txtFt.Size = new System.Drawing.Size(163, 36);
+            this.txtFt.Size = new System.Drawing.Size(209, 39);
             this.txtFt.TabIndex = 10;
             this.txtFt.TextChanged += new System.EventHandler(this.txtFt_TextChanged);
             this.txtFt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtFt_KeyUp);
@@ -169,10 +174,11 @@
             // txtYard
             // 
             this.txtYard.BackColor = System.Drawing.SystemColors.Window;
+            this.txtYard.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtYard.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtYard.Location = new System.Drawing.Point(430, 300);
+            this.txtYard.Location = new System.Drawing.Point(475, 300);
             this.txtYard.Name = "txtYard";
-            this.txtYard.Size = new System.Drawing.Size(163, 36);
+            this.txtYard.Size = new System.Drawing.Size(187, 39);
             this.txtYard.TabIndex = 11;
             this.txtYard.TextChanged += new System.EventHandler(this.txtYard_TextChanged);
             this.txtYard.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtYard_KeyUp);
@@ -193,6 +199,7 @@
             // 
             // txtInfo
             // 
+            this.txtInfo.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtInfo.Location = new System.Drawing.Point(100, 451);
             this.txtInfo.Multiline = true;
             this.txtInfo.Name = "txtInfo";
