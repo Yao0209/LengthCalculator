@@ -185,10 +185,11 @@
             this.btnAllClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAllClear.Location = new System.Drawing.Point(268, 55);
             this.btnAllClear.Name = "btnAllClear";
-            this.btnAllClear.Size = new System.Drawing.Size(153, 75);
+            this.btnAllClear.Size = new System.Drawing.Size(153, 86);
             this.btnAllClear.TabIndex = 16;
             this.btnAllClear.Text = "清除 (delete)";
             this.btnAllClear.UseVisualStyleBackColor = false;
+            this.btnAllClear.Click += new System.EventHandler(this.btnAllClear_Click);
             // 
             // txtInfo
             // 
@@ -231,6 +232,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
