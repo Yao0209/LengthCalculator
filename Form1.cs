@@ -17,6 +17,8 @@ namespace LengthCalculator
             InitializeComponent();
         }
 
+
+
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -110,7 +112,17 @@ namespace LengthCalculator
 
         private void txtKM_KeyUp(object sender, KeyEventArgs e)
         {
+            double douKM;  // 宣告一個double變數，變數名稱叫douKM
 
+            douKM = Convert.ToDouble(txtKM.Text); // 從txtKM輸入文字框取得輸入的文字
+
+            txtKM.Text = string.Format("{0:0.##########}", douKM); // 公里轉換成公里
+
+            txtCM.Text = string.Format("{0:0.##########}", douKM * 100000); // 公里轉換成公分
+            txtM.Text = string.Format("{0:0.##########}", douKM * 1000); // 公里轉換成公尺
+            txtIn.Text = string.Format("{0:0.##########}", douKM * 39370.08); // 公里轉換成英吋
+            txtFt.Text = string.Format("{0:0.##########}", douKM * 3280.84); // 公里轉換成英呎
+            txtYard.Text = string.Format("{0:0.##########}", douKM * 1093.613); // 公里轉換成碼
         }
 
         private void txtIn_KeyUp(object sender, KeyEventArgs e)
