@@ -131,6 +131,13 @@ namespace LengthCalculator
 
         private void btnAllClear_Click(object sender, EventArgs e)
         {
+            // 給予每一個輸入文字框一個「空字串」，順便賦與文字框清除的功能
+            txtCM.Text = "";
+            txtM.Text = "";
+            txtKM.Text = "";
+            txtIn.Text = "";
+            txtFt.Text = "";
+            txtYard.Text = "";
 
         }
     }

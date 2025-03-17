@@ -200,7 +200,7 @@
             // txtInfo
             // 
             this.txtInfo.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtInfo.Location = new System.Drawing.Point(100, 451);
+            this.txtInfo.Location = new System.Drawing.Point(41, 451);
             this.txtInfo.Multiline = true;
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.Size = new System.Drawing.Size(572, 36);
@@ -211,7 +211,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("微軟正黑體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label12.Location = new System.Drawing.Point(98, 391);
+            this.label12.Location = new System.Drawing.Point(66, 401);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(168, 47);
             this.label12.TabIndex = 19;
