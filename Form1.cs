@@ -76,7 +76,7 @@ namespace LengthCalculator
         {
             double douCM; //宣告一個double變數，變數名稱叫douCM
 
-            douCM = Convert.ToDouble(txtCM.Text); //從txtCM輸入文字框取得輸入的文字，並且轉換成double的資料型態
+            douCM = Convert.ToDouble(txtCM.Text); //從txtCM輸入文字框取得輸入的文字，並且轉換成double的資料型態。
 
             txtM.Text = string.Format("{0:0.##########}", douCM / 100); // 井字號#決定小數點後要有幾位，一個#代表一位數字
             //將douCM的數值除以100，也就是從公分轉換成公尺
