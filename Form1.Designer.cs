@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(120, 161);
+            this.label1.Location = new System.Drawing.Point(94, 161);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 35);
             this.label1.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(288, 161);
+            this.label2.Location = new System.Drawing.Point(315, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 35);
             this.label2.TabIndex = 1;
@@ -71,7 +71,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.Location = new System.Drawing.Point(446, 161);
+            this.label3.Location = new System.Drawing.Point(498, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(135, 35);
             this.label3.TabIndex = 2;
@@ -104,7 +104,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微軟正黑體", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label6.Location = new System.Drawing.Point(294, 262);
+            this.label6.Location = new System.Drawing.Point(315, 262);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 35);
             this.label6.TabIndex = 5;
@@ -116,9 +116,9 @@
             this.txtCM.BackColor = System.Drawing.SystemColors.Window;
             this.txtCM.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtCM.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtCM.Location = new System.Drawing.Point(91, 199);
+            this.txtCM.Location = new System.Drawing.Point(41, 199);
             this.txtCM.Name = "txtCM";
-            this.txtCM.Size = new System.Drawing.Size(163, 39);
+            this.txtCM.Size = new System.Drawing.Size(213, 39);
             this.txtCM.TabIndex = 6;
             this.txtCM.TextChanged += new System.EventHandler(this.txtCM_TextChanged);
             this.txtCM.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCM_KeyUp);
@@ -130,7 +130,7 @@
             this.txtM.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txtM.Location = new System.Drawing.Point(261, 199);
             this.txtM.Name = "txtM";
-            this.txtM.Size = new System.Drawing.Size(163, 39);
+            this.txtM.Size = new System.Drawing.Size(208, 39);
             this.txtM.TabIndex = 7;
             this.txtM.TextChanged += new System.EventHandler(this.txtM_TextChanged);
             this.txtM.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtM_KeyUp);
@@ -140,9 +140,9 @@
             this.txtKM.BackColor = System.Drawing.SystemColors.Window;
             this.txtKM.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtKM.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtKM.Location = new System.Drawing.Point(430, 199);
+            this.txtKM.Location = new System.Drawing.Point(475, 199);
             this.txtKM.Name = "txtKM";
-            this.txtKM.Size = new System.Drawing.Size(163, 39);
+            this.txtKM.Size = new System.Drawing.Size(187, 39);
             this.txtKM.TabIndex = 8;
             this.txtKM.TextChanged += new System.EventHandler(this.txtKM_TextChanged);
             this.txtKM.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtKM_KeyUp);
@@ -189,7 +189,7 @@
             this.btnAllClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAllClear.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnAllClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAllClear.Location = new System.Drawing.Point(268, 55);
+            this.btnAllClear.Location = new System.Drawing.Point(282, 51);
             this.btnAllClear.Name = "btnAllClear";
             this.btnAllClear.Size = new System.Drawing.Size(153, 86);
             this.btnAllClear.TabIndex = 16;

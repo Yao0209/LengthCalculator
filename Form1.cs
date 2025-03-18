@@ -157,7 +157,17 @@ namespace LengthCalculator
 
         private void txtYard_KeyUp(object sender, KeyEventArgs e)
         {
+            double douYard;  // 宣告一個double變數，變數名稱叫douYard
 
+            douYard = Convert.ToDouble(txtYard.Text); // 從txtYard輸入文字框取得輸入的文字
+
+            txtYard.Text = string.Format("{0:0.##########}", douYard); // 碼轉換成碼
+
+            txtCM.Text = string.Format("{0:0.##########}", douYard * 91.44); // 碼轉換成公分
+            txtM.Text = string.Format("{0:0.##########}", douYard / 1.094); // 碼轉換成公尺
+            txtKM.Text = string.Format("{0:0.##########}", douYard / 1093.613); // 碼轉換成公里
+            txtIn.Text = string.Format("{0:0.##########}", douYard * 36); // 碼轉換成英吋
+            txtFt.Text = string.Format("{0:0.##########}", douYard * 3); // 碼轉換成英呎
         }
 
         private void txtInfo_KeyUp(object sender, KeyEventArgs e)
