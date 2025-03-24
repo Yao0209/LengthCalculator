@@ -309,6 +309,7 @@ namespace LengthCalculator
             txtIn.Text = "";
             txtFt.Text = "";
             txtYard.Text = "";
+            txtInfo.Text = "請輸入數字";
 
         }
     }
