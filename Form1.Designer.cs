@@ -205,6 +205,7 @@
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.Size = new System.Drawing.Size(572, 36);
             this.txtInfo.TabIndex = 17;
+            this.txtInfo.TextChanged += new System.EventHandler(this.txtInfo_TextChanged);
             this.txtInfo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtInfo_KeyUp);
             // 
             // label12
