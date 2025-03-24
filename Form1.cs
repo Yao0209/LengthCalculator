@@ -79,21 +79,28 @@ namespace LengthCalculator
          
             
         }
-
-        void caculateAnswer(int 參數1, double 參數2)
+        // 設計一個單位轉換計算的函式，沒有回傳值，設計兩個參數，1.類別參數、2.數值參數
+        private void caculateAnswer(int _kind, double _value)
         {
-            txtCM.Text = string.Format("{0:0.##########}", 參數2);
-            txtM.Text = string.Format("{0:0.##########}", 參數2 / 100);
-            txtKM.Text = string.Format("{0:0.##########}", 參數2 / 100000);
-            txtIn.Text = string.Format("{0:0.##########}", 參數2 / 2.54);
-            txtFt.Text = string.Format("{0:0.##########}", 參數2 / 30.48);
-            txtYard.Text = string.Format("{0:0.##########}", 參數2 / 91.44);
+            if (_kind != 0)
+                txtCM.Text = string.Format("{0:0.##########}", _value);
+            if (_kind != 1)
+                txtM.Text = string.Format("{0:0.##########}", _value / 100);
+            if (_kind != 2)
+                txtKM.Text = string.Format("{0:0.##########}", _value / 100000);
+            if (_kind != 3)
+                txtIn.Text = string.Format("{0:0.##########}", _value / 2.54);
+            if (_kind != 4)
+                txtFt.Text = string.Format("{0:0.##########}", _value / 30.48);
+            if (_kind != 5)
+                txtYard.Text = string.Format("{0:0.##########}", _value / 91.44);
         }
 
         // 全域變數
         string strInput; // 字串型態的strInput變數
         double douOutput; // double浮點數型態的douOutput變數
 
+        // 公分的綁定事件程式碼片段
         private void txtCM_KeyUp(object sender, KeyEventArgs e)
         {
             /*
@@ -135,6 +142,7 @@ namespace LengthCalculator
                 txtCM.Text = "";
             }
         }
+        // 公尺的綁定事件程式碼片段
         private void txtM_KeyUp(object sender, KeyEventArgs e)
         {
             /*
@@ -155,12 +163,18 @@ namespace LengthCalculator
             // 判斷式，如果能夠以double.TryParse成功轉型，那才做數值的計算
             if (double.TryParse(strInput, out douOutput) == true)
             {
+                /*
                 txtCM.Text = string.Format("{0:0.##########}", douOutput * 100);
                 txtKM.Text = string.Format("{0:0.##########}", douOutput / 0.001);
                 txtIn.Text = string.Format("{0:0.##########}", douOutput * 39.37);
                 txtFt.Text = string.Format("{0:0.##########}", douOutput * 3.28);
                 txtYard.Text = string.Format("{0:0.##########}", douOutput * 1.09);
-            }
+                */
+            
+
+            //執行計算長度函式
+            caculateAnswer(1, douOutput * 100); // 事先將公尺轉換成公分
+            }   
             else
             {
                 // 如果無法轉型，則是在說明文字中顯示錯誤訊息，並且將txtM文字框清除
@@ -169,6 +183,7 @@ namespace LengthCalculator
             }
         }
 
+        // 公里的綁定事件程式碼片段
         private void txtKM_KeyUp(object sender, KeyEventArgs e)
         {
             /*
@@ -189,11 +204,14 @@ namespace LengthCalculator
             // 判斷式，如果能夠以double.TryParse成功轉型，那才做數值的計算
             if (double.TryParse(strInput, out douOutput) == true)
             {
+                /*
                 txtCM.Text = string.Format("{0:0.##########}", douOutput * 100000);
                 txtM.Text = string.Format("{0:0.##########}", douOutput * 1000);
                 txtIn.Text = string.Format("{0:0.##########}", douOutput * 39370.08);
                 txtFt.Text = string.Format("{0:0.##########}", douOutput * 3280.84);
                 txtYard.Text = string.Format("{0:0.##########}", douOutput * 1093.613);
+                */
+                caculateAnswer(2, douOutput * 100000); // 事先將公里轉換成公分
             }
             else
             {
@@ -203,6 +221,7 @@ namespace LengthCalculator
             }
         }
 
+        // 英吋的綁定事件程式碼片段
         private void txtIn_KeyUp(object sender, KeyEventArgs e)
         {
             /*
@@ -223,11 +242,14 @@ namespace LengthCalculator
             // 判斷式，如果能夠以double.TryParse成功轉型，那才做數值的計算
             if (double.TryParse(strInput, out douOutput) == true)
             {
+                /*
                 txtCM.Text = string.Format("{0:0.##########}", douOutput * 2.54);
                 txtM.Text = string.Format("{0:0.##########}", douOutput / 39.37);
                 txtKM.Text = string.Format("{0:0.##########}", douOutput / 39370.08);
                 txtFt.Text = string.Format("{0:0.##########}", douOutput / 12);
                 txtYard.Text = string.Format("{0:0.##########}", douOutput / 36);
+                */
+                caculateAnswer(3, douOutput * 2.54); // 事先將英吋轉換成公分
             }
             else
             {
@@ -237,6 +259,7 @@ namespace LengthCalculator
             }
         }
 
+        // 英呎的綁定事件程式碼片段
         private void txtFt_KeyUp(object sender, KeyEventArgs e)
         {
 
@@ -258,11 +281,14 @@ namespace LengthCalculator
             // 判斷式，如果能夠以double.TryParse成功轉型，那才做數值的計算
             if (double.TryParse(strInput, out douOutput) == true)
             {
+                /*
                 txtCM.Text = string.Format("{0:0.##########}", douOutput * 30.48);
                 txtM.Text = string.Format("{0:0.##########}", douOutput / 3.281);
                 txtKM.Text = string.Format("{0:0.##########}", douOutput / 3280.84);
                 txtIn.Text = string.Format("{0:0.##########}", douOutput * 12);
                 txtYard.Text = string.Format("{0:0.##########}", douOutput / 3);
+                */
+                caculateAnswer(4, douOutput * 30.48); // 事先將英呎轉換成公分
             }
             else
             {
@@ -272,6 +298,7 @@ namespace LengthCalculator
             }
         }
 
+        // 碼的綁定事件程式碼片段
         private void txtYard_KeyUp(object sender, KeyEventArgs e)
         {
             /*
@@ -292,11 +319,14 @@ namespace LengthCalculator
             // 判斷式，如果能夠以double.TryParse成功轉型，那才做數值的計算
             if (double.TryParse(strInput, out douOutput) == true)
             {
+                /*
                 txtCM.Text = string.Format("{0:0.##########}", douOutput * 91.44);
                 txtM.Text = string.Format("{0:0.##########}", douOutput / 1.094);
                 txtKM.Text = string.Format("{0:0.##########}", douOutput / 1093.613);
                 txtIn.Text = string.Format("{0:0.##########}", douOutput * 36);
                 txtFt.Text = string.Format("{0:0.##########}", douOutput * 3);
+                */
+                caculateAnswer(5, douOutput * 91.44); // 事先將碼轉換成公分
             }
             else
             {
@@ -325,7 +355,7 @@ namespace LengthCalculator
             txtIn.Text = "";
             txtFt.Text = "";
             txtYard.Text = "";
-            txtInfo.Text = "請輸入數字";
+            txtInfo.Text = "";
 
         }
 
